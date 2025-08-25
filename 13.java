@@ -1,3 +1,5 @@
+//time: O(N)
+//space: O(1)
 import java.util.HashMap;
 import java.util.Map;
 
