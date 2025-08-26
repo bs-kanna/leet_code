@@ -1,3 +1,5 @@
+//time: O(S)
+//space: O(1)
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         int pl = 0;
