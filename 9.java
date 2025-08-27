@@ -1,3 +1,5 @@
+//time: O(logN)
+//space: O(1)
 class Solution {
     public boolean isPalindrome(int x) {
         if(x<0)
