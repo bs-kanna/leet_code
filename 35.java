@@ -12,11 +12,10 @@ class Solution {
         }else if(nums[len-1] < target){
             return len;
         }
-        int g=0;
-        while(i<=k && g < 50){
-            System.out.println("i: "+i+" k: "+k);
+        while(i<=k){
+            // System.out.println("i: "+i+" k: "+k);
             int j = nums[(i+k)/2];
-            System.out.println(nums[i]+" - "+j+" - "+nums[k]);
+            // System.out.println(nums[i]+" - "+j+" - "+nums[k]);
             if(j == target){
                 return (i+k)/2;
             }else if(i+1 == k && (((nums[i]+1) == target) || ((nums[k]-1) == target))){
@@ -26,7 +25,6 @@ class Solution {
             }else if(j > target){
                 k = ((i+k)/2);
             }
-            g++;
         }
 
         return 105;
